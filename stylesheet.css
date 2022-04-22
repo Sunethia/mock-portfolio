@@ -10,7 +10,7 @@
   position: fixed;
   width: 100%;
   opacity: 0.5;
-  color: white !important;
+  color: white;
 }
 .bout {
   background-color: gray;
@@ -356,4 +356,13 @@ h2.cnt {
   background-color: white;
   color: grey;
   border: none;
+}
+#resume {
+  background-color: rgb(204, 213, 174);
+}
+#projects {
+  background-color: rgb(212, 163, 115);
+}
+#contact {
+  background-color: rgb(221, 190, 169);
 }
