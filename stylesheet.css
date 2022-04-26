@@ -366,3 +366,50 @@ h2.cnt {
 #contact {
   background-color: rgb(221, 190, 169);
 }
+/* GRID STYLING HERE */
+body {
+  display: grid;
+  grid-template-areas:
+    "landing landing landing"
+    "about about about"
+    "testimonials testimonials testimonials"
+    "skills skills skills"
+    "resume resume resume"
+    "projects projects projects"
+    "contact contact contact";
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    grid-template-areas:
+      "landing"
+      "about"
+      "testimonials"
+      "skills"
+      "resume"
+      "projects"
+      "contact";
+  }
+}
+
+#landing {
+  grid-area: landing;
+}
+#about {
+  grid-area: about;
+}
+#testimonials {
+  grid-area: testimonials;
+}
+#skills {
+  grid-area: skills;
+}
+#resume {
+  grid-area: resume;
+}
+#projects {
+  grid-area: projects;
+}
+#contact {
+  grid-area: contact;
+}
