@@ -5,15 +5,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
-.navbar {
-  position: fixed;
-  width: 100%;
-  opacity: 0.5;
-  color: white;
-}
 .bout {
-  background-color: gray;
+  background-color: rgb(10, 6, 6);
   color: white;
   border: none;
 }
@@ -37,6 +30,9 @@ ul {
   background-color: #131515;
   height: 70px;
   text-align: center;
+}
+ol {
+  font-size: 16px;
 }
 a.logo {
   font-size: 20px;
@@ -76,7 +72,15 @@ li.nav-links {
 h1,
 h2 {
   text-align: center;
-  font-size: 15px;
+  font-size: 2rem;
+  font-family: monospace;
+  color: white;
+}
+h3 {
+  font-size: 12px;
+}
+p.about_para {
+  font-size: 16px;
   font-family: monospace;
 }
 button {
@@ -104,22 +108,25 @@ button {
 }
 
 #about {
-  background-color: rgb(203, 153, 126);
+  background-color: black;
+  border: 1px solid white;
   display: flex;
   flex-direction: column;
   text-align: center;
   height: 100vh;
   width: 100%;
   padding-bottom: 300px;
+  color: white;
 }
-.about {
-  background-color: aqua;
-}
-.about img {
+
+.about-img img {
   justify-self: flex-start;
   align-self: flex-start;
   width: 400px;
-  height: 400px;
+  height: 600px;
+  margin-top: 50px;
+  border: 5px solid white;
+  border-radius: 10px;
 }
 .about-txt {
   width: 400px;
@@ -135,8 +142,9 @@ button {
   flex-wrap: nowrap;
   justify-content: center;
 }
-h3 {
+.aboutblock h3 {
   text-align: center;
+  font-size: 15px;
 }
 h4 {
   font-size: 15px;
@@ -161,6 +169,7 @@ h4 {
 } */
 .fa-brands {
   font-size: 100px;
+  color: white;
 }
 #Icons {
   display: flex;
@@ -187,10 +196,10 @@ i {
 }
 
 .about-img {
-  width: 300px;
+  width: 350px;
   height: 300px;
-  padding-top: 100px;
-  border-radius: 50%;
+
+  background-color: black;
 }
 .test-img {
   width: 250px;
@@ -227,8 +236,10 @@ i {
 
 .edu {
   font-size: 35px;
+  font-family: monospace;
   padding-bottom: 20px;
 }
+
 .landing-kop {
   color: white;
   font-size: 60px;
@@ -242,9 +253,10 @@ i {
   }
 }
 #contact {
-  padding-top: 300px;
+  padding-top: 100px;
   font-size: 20px;
   padding-bottom: 100px;
+  border: 1px solid black;
 }
 form {
   padding-top: 100px;
@@ -282,11 +294,12 @@ input {
   width: 100%;
 } */
 .resume {
-  padding-top: 220px;
+  padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 150vh;
   justify-content: space-evenly;
+  color: white;
 }
 .landing_info {
   padding-top: 300px;
@@ -327,10 +340,35 @@ h3 {
 }
 /* h1 */
 #skills {
-  background-color: rgb(221, 190, 169);
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#skills button {
+  background-color: black;
+  border: none;
+}
+
+div.modal-content .container {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+button img {
+  border: 5px solid white;
+  border-radius: 10px;
 }
 #testimonials {
-  background-color: rgb(183, 183, 164);
+  background-color: black;
+  color: white;
+  border: 5px solid white;
+  height: 100vh;
 }
 h2.cnt {
   font-size: 35px;
@@ -342,6 +380,7 @@ h2.cnt {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  color: white;
 }
 
 .submit {
@@ -354,17 +393,30 @@ h2.cnt {
 }
 .submit:hover {
   background-color: white;
-  color: grey;
+  color: rgb(75, 28, 193);
   border: none;
 }
 #resume {
-  background-color: rgb(204, 213, 174);
+  background-color: black;
+  border: 1px solid white;
 }
 #projects {
-  background-color: rgb(212, 163, 115);
+  background-color: grey;
+  color: white;
+  border: 1px solid grey;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #contact {
-  background-color: rgb(221, 190, 169);
+  background-color: rgb(64, 61, 57);
+  color: black;
+  border: 1px solid white;
+  
+}
+
 }
 /* GRID STYLING HERE */
 body {
@@ -413,3 +465,58 @@ body {
 #contact {
   grid-area: contact;
 }
+h2.test {
+  font-size: 20px;
+  font-family: monospace;
+}
+
+div.skills {
+  font-size: 3rem;
+}
+
+#skills {
+  width: 100%;
+  height: 80vh;
+  border: 1px solid white;
+}
+
+.skills div.row {
+  justify-content: center;
+  margin-top: 100px;
+  gap: 50px;
+}
+.intro {
+  text-align: center;
+}
+.intro h1 {
+  font-size: 3rem;
+  margin-top: 50px;
+}
+.skills div.progress-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-item {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  height: 80vh;
+}
+
+.carousel-caption {
+  margin-bottom: 10%;
+}
+
+section#skills {
+  padding: 80px;
+}
+#cookie-text {
+  text-align: center;
+  font-size: 35px;
+}
+
+i.fa-brands.fa-github {
+    color: black;
+    height: 15px;
+    width: 15px;
